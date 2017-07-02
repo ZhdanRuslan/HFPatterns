@@ -1,5 +1,8 @@
 package ch1_strategy;
 
+import ch1_strategy.flybehavior.FlyBehavior;
+import ch1_strategy.quackbehavior.QuackBehavior;
+
 public abstract class Duck {
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
