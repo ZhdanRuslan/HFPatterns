@@ -76,3 +76,12 @@ local.properties
 # .idea/sqlDataSources.xml
 # .idea/dynamic.xml
 # .idea/uiDesigner.xml
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+/captures
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
