@@ -1,4 +1,4 @@
-package ch2_observer;
+package ch2_observer.own_vers;
 
 import java.util.ArrayList;
 
