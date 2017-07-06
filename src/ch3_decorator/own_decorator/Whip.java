@@ -1,4 +1,4 @@
-package ch3_decorator;
+package ch3_decorator.own_decorator;
 
 public class Whip extends CondimentDecorator{
     Beverage beverage;
