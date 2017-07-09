@@ -27,5 +27,6 @@ public abstract class Pizza {
     }
 
     public void box() {
+        System.out.println("Place pizza in official PizzaStore box");
     }
 }
