@@ -1,10 +1,10 @@
 package ch4_factory;
 
-public class VeggiePizza extends Pizza {
+public class PepperoniPiza extends Pizza {
 
     PizzaIngredientFactory ingredientFactory;
 
-    VeggiePizza(PizzaIngredientFactory ingredientFactory) {
+    PepperoniPiza(PizzaIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
     }
 
@@ -13,6 +13,5 @@ public class VeggiePizza extends Pizza {
         System.out.println("Preparing " + name);
         dough = ingredientFactory.createDough();
         sauce = ingredientFactory.createSauce();
-        cheese = ingredientFactory.createCheese();
     }
 }
