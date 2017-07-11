@@ -3,31 +3,32 @@ package ch4_factory;
 public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
     @Override
     public Dough createDough() {
-        return null;
+        return new ThickCrustDough();
     }
 
     @Override
     public Sauce createSauce() {
-        return null;
+        return new PlumTomatoSauce();
     }
 
     @Override
     public Cheese createCheese() {
-        return null;
+        return new MozzarellaCheese();
     }
 
     @Override
     public Veggies[] createVeggies() {
-        return new Veggies[0];
+        Veggies veggies[] = {new BlackOlives(), new Spinach(), new Eggplant()};
+        return veggies;
     }
 
     @Override
     public Pepperoni createPepperoni() {
-        return null;
+        return new SlicedPepperoni();
     }
 
     @Override
     public Clams createClams() {
-        return null;
+        return new FrozenClams();
     }
 }
