@@ -3,14 +3,23 @@ package ch4_factory;
 public class NYPizzaStore extends PizzaStore {
 
     protected Pizza createPizza(String item) {
+        Pizza pizza = null;
+
+        PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
+
         if (item.equals("cheese")) {
-            return new NYStyleCheesePizza();
+            pizza = new CheesePizza(ingredientFactory);
+            pizza.setName("NY Style cheese pizza");
         } else if (item.equals("veggie")) {
-            return new NYStyleVeggiePizza();
+            pizza = new VeggiePizza(ingredientFactory);
+            pizza.setName("NY Style veggie pizza");
         } else if (item.equals("clam")) {
-            return new NYStyleClamPizza();
+            pizza = new ClamPizza(ingredientFactory);
+            pizza.setName("NY Style clam pizza");
         } else if (item.equals("paperonni")) {
-            return new NYStylePapperoniPizza();
-        } else return null;
+            pizza = new PepperoniPiza(ingredientFactory);
+            pizza.setName("NY Style pepperoni pizza");
+        }
+        return pizza;
     }
 }
