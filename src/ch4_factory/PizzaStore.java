@@ -1,5 +1,7 @@
 package ch4_factory;
 
+import ch4_factory.entities.Pizza;
+
 public abstract class PizzaStore {
 
 

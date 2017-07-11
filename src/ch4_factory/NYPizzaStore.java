@@ -1,5 +1,9 @@
 package ch4_factory;
 
+import ch4_factory.entities.*;
+import ch4_factory.factory.NYPizzaIngredientFactory;
+import ch4_factory.factory.PizzaIngredientFactory;
+
 public class NYPizzaStore extends PizzaStore {
 
     protected Pizza createPizza(String item) {
