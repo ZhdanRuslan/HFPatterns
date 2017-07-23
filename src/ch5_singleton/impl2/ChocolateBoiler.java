@@ -32,6 +32,7 @@ public class ChocolateBoiler {
         return empty;
     }
 
+    
     public boolean isBoiled() {
         return boiled;
     }
