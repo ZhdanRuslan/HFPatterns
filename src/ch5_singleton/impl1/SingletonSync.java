@@ -1,14 +1,14 @@
 package ch5_singleton.impl1;
 
-public class Singleton {
-    private static Singleton uniqueInstance;
+public class SingletonSync {
+    private static SingletonSync uniqueInstance;
 
-    private Singleton() {
+    private SingletonSync() {
     }
 
-    public static synchronized Singleton getInstance() {
+    public static synchronized SingletonSync getInstance() {
         if (uniqueInstance == null) {
-            uniqueInstance = new Singleton();
+            uniqueInstance = new SingletonSync();
         }
         return uniqueInstance;
     }
