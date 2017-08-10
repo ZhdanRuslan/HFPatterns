@@ -1,4 +1,4 @@
-package ch6_command;
+package ch6_command.example1;
 
 public class Light {
 
